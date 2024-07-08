@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Character Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Character Information"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/et_career"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Career" />
+
+        <EditText
+            android:id="@+id/et_appearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Appearance" />
+
+        <!-- Talents -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talents"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_talents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter talents here"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:minLines="3" />
+
+        <!-- Personal Agenda -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Agenda"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_personal_agenda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Enter personal agenda" />
+
+        <!-- Relationships -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relationships"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_rival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Rival" />
+
+        <EditText
+            android:id="@+id/et_buddy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="Buddy" />
+
+        <!-- Stress, Health, and Radiation -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stress, Health, and Radiation"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stress Level: " />
+
+            <EditText
+                android:id="@+id/et_stress_level"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0" />
+
+            <Button
+                android:id="@+id/btn_add_stress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btn_subtract_stress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health: " />
+
+            <EditText
+                android:id="@+id/et_health"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0" />
+
+            <Button
+                android:id="@+id/btn_add_health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btn_subtract_health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radiation: " />
+
+            <EditText
+                android:id="@+id/et_radiation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0" />
+
+            <Button
+                android:id="@+id/btn_add_radiation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btn_subtract_radiation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </LinearLayout>
+
+        <!-- Consumables -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consumables"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air: " />
+
+            <EditText
+                android:id="@+id/et_air"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0" />
+
+            <Button
+                android:id="@+id/btn_add_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btn_subtract_air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food: " />
+
+            <EditText
+                android:id="@+id/et_food"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0" />
+
+            <Button
+                android:id="@+id/btn_add_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btn_subtract_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Power: " />
+
+            <EditText
+                android:id="@+id/et_power"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0" />
+
+            <Button
+                android:id="@+id/btn_add_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btn_subtract_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Water: " />
+
+            <EditText
+                android:id="@+id/et_water"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="0" />
+
+            <Button
+                android:id="@+id/btn_add_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/btn_subtract_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-" />
+        </LinearLayout>
+
+        <!-- Attributes and Skills -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attributes and Skills"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <!-- Strength -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Strength"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_strength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Strength" />
+
+        <EditText
+            android:id="@+id/et_close_combat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Close Combat" />
+
+        <EditText
+            android:id="@+id/et_heavy_machinery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Heavy Machinery" />
+
+        <EditText
+            android:id="@+id/et_stamina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stamina" />
+
+        <!-- Agility -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agility"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_agility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Agility" />
+
+        <EditText
+            android:id="@+id/et_ranged_combat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ranged Combat" />
+
+        <EditText
+            android:id="@+id/et_mobility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobility" />
+
+        <EditText
+            android:id="@+id/et_piloting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Piloting" />
+
+        <!-- Empathy -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empathy"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_empathy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Empathy" />
+
+        <EditText
+            android:id="@+id/et_command"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Command" />
+
+        <EditText
+            android:id="@+id/et_manipulation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Manipulation" />
+
+        <EditText
+            android:id="@+id/et_medical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medical" />
+
+        <!-- Wits -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wits"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/et_wits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wits" />
+
+        <EditText
+            android:id="@+id/et_observation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Observation" />
+
+        <EditText
+            android:id="@+id/et_survival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Survival" />
+
+        <EditText
+            android:id="@+id/et_comtech"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Comtech" />
+
+        <!-- Experience Points -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience Points"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_experience_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number" />
+
+        <!-- Story Points -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Story Points"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_story_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:inputType="number" />
+
+        <!-- Gear -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gear"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_gear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gear 1" />
+
+        <EditText
+            android:id="@+id/et_gear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gear 2" />
+
+        <EditText
+            android:id="@+id/et_gear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gear 3" />
+
+        <EditText
+            android:id="@+id/et_gear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gear 4" />
+
+        <EditText
+            android:id="@+id/et_gear5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gear 5" />
+
+        <EditText
+            android:id="@+id/et_gear6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gear 6" />
+
+        <EditText
+            android:id="@+id/et_gear7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gear 7" />
+
+        <EditText
+            android:id="@+id/et_gear8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gear 8" />
+
+        <EditText
+            android:id="@+id/et_gear9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gear 9" />
+
+        <EditText
+            android:id="@+id/et_gear10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gear 10" />
+
+        <!-- Weapons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weapons"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/et_weapon1_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Weapon 1 Name" />
+
+            <EditText
+                android:id="@+id/et_weapon1_bonus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Bonus" />
+
+            <EditText
+                android:id="@+id/et_weapon1_damage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Damage" />
+
+            <EditText
+                android:id="@+id/et_weapon1_range"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Range" />
+        </LinearLayout>
+
+
+
+        <!-- Armor -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Armor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/et_armor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Armor Name" />
+
+        <EditText
+            android:id="@+id/et_armor_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Armor Rating" />
+
+        <Button
+            android:id="@+id/btn_save_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Character" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UI.DiceRollerFragment">
+
+    <!-- Base Dice Controls -->
+    <TextView
+        android:id="@+id/base_dice_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Base Dice"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/button_add_base_dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <TextView
+            android:id="@+id/base_dice_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="0"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_subtract_base_dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtract" />
+    </LinearLayout>
+
+    <!-- Stress Dice Controls -->
+    <TextView
+        android:id="@+id/stress_dice_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stress Dice"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/button_add_stress_dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+
+        <TextView
+            android:id="@+id/stress_dice_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="0"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button_subtract_stress_dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subtract" />
+    </LinearLayout>
+
+    <!-- Roll Dice Button -->
+    <Button
+        android:id="@+id/button_roll_dice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Roll Dice"
+        android:layout_marginTop="16dp" />
+
+    <!-- Display Rolled Dice -->
+    <TextView
+        android:id="@+id/rolled_dice_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

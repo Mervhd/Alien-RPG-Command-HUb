@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_200">#88B04B</color> <!-- Dark green for a sense of dread and mystery -->
+    <color name="green_500">#4B8B3B</color> <!-- Slightly brighter green for contrast -->
+    <color name="green_700">#2E5A1E</color> <!-- Darker green for a deeper contrast -->
+    <color name="gray_200">#A9A9A9</color> <!-- Light gray for softer elements -->
+    <color name="gray_700">#696969</color> <!-- Dark gray for darker elements -->
+    <color name="black">#000000</color> <!-- Black for the main background and dark elements -->
+    <color name="white">#FFFFFF</color> <!-- White for text and highlights -->
+</resources>
