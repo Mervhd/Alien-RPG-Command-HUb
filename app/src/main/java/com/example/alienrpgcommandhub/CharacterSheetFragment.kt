@@ -1,4 +1,4 @@
-package com.example.alienrpgcommandhub.ui
+package com.example.alienrpgcommandhub.UI
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -57,12 +57,22 @@ class CharacterSheetFragment : Fragment() {
     private lateinit var armorRatingEditText: EditText
     private lateinit var saveButton: Button
 
+    // Variables used to store the current value of Stress, Health, Rad, etc...
+    private var stressLevel = 0
+    private var health = 0
+    private var radiation = 0
+    private var air = 0
+    private var food = 0
+    private var power = 0
+    private var water = 0
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_character_sheet, container, false)
         initializeViews(view)
+        setupButtonListeners(view)
         saveButton.setOnClickListener {
             saveCharacter()
         }
@@ -121,6 +131,103 @@ class CharacterSheetFragment : Fragment() {
         armorNameEditText = view.findViewById(R.id.et_armor_name)
         armorRatingEditText = view.findViewById(R.id.et_armor_rating)
         saveButton = view.findViewById(R.id.btn_save_character)
+    }
+
+    private fun setupButtonListeners(view: View) {
+        // Stress Level
+        view.findViewById<Button>(R.id.btn_add_stress).setOnClickListener {
+            stressLevel++
+            updateEditTextValue(stressLevelEditText, stressLevel)
+        }
+
+        view.findViewById<Button>(R.id.btn_subtract_stress).setOnClickListener {
+            if (stressLevel > 0) {
+                stressLevel--
+                updateEditTextValue(stressLevelEditText, stressLevel)
+            }
+        }
+
+        // Health
+        view.findViewById<Button>(R.id.btn_add_health).setOnClickListener {
+            health++
+            updateEditTextValue(healthEditText, health)
+        }
+        view.findViewById<Button>(R.id.btn_subtract_health).setOnClickListener {
+            if (health > 0) {
+                health--
+                updateEditTextValue(healthEditText, health)
+            }
+        }
+
+        // Radiation
+        view.findViewById<Button>(R.id.btn_add_radiation).setOnClickListener {
+            radiation++
+            updateEditTextValue(radiationEditText, radiation)
+        }
+
+        view.findViewById<Button>(R.id.btn_subtract_radiation).setOnClickListener {
+            if (radiation > 0) {
+                radiation--
+                updateEditTextValue(radiationEditText, radiation)
+            }
+        }
+
+        // Air
+        view.findViewById<Button>(R.id.btn_add_air).setOnClickListener {
+            air++
+            updateEditTextValue(airEditText, air)
+        }
+
+        view.findViewById<Button>(R.id.btn_subtract_air).setOnClickListener {
+            if (air > 0) {
+                air--
+                updateEditTextValue(airEditText, air)
+            }
+        }
+
+        // Food
+        view.findViewById<Button>(R.id.btn_add_food).setOnClickListener {
+            food++
+            updateEditTextValue(foodEditText, food)
+        }
+
+        view.findViewById<Button>(R.id.btn_subtract_food).setOnClickListener {
+            if (food > 0) {
+                food--
+                updateEditTextValue(foodEditText, food)
+            }
+        }
+
+        // Power
+        view.findViewById<Button>(R.id.btn_add_power).setOnClickListener {
+            power++
+            updateEditTextValue(powerEditText, power)
+        }
+
+        view.findViewById<Button>(R.id.btn_subtract_power).setOnClickListener {
+            if (power > 0) {
+                power--
+                updateEditTextValue(powerEditText, power)
+            }
+        }
+
+        // Water
+        view.findViewById<Button>(R.id.btn_add_water).setOnClickListener {
+            water++
+            updateEditTextValue(waterEditText, water)
+        }
+
+        view.findViewById<Button>(R.id.btn_subtract_water).setOnClickListener {
+            if (water > 0) {
+                water--
+                updateEditTextValue(waterEditText, water)
+            }
+        }
+    }
+
+
+    private fun updateEditTextValue(editText: EditText, value: Int) {
+        editText.setText(value.toString())
     }
 
     private fun saveCharacter() {

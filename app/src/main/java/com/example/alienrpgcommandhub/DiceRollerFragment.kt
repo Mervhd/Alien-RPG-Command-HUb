@@ -1,4 +1,4 @@
-package com.example.alienrpgcommandhub.ui
+package com.example.alienrpgcommandhub.UI
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -57,6 +57,10 @@ class DiceRollerFragment : Fragment() {
             rollDice()
         }
 
+        view.findViewById<Button>(R.id.button_roll_d66).setOnClickListener {
+            rollD66()
+        }
+
         return view
     }
 
@@ -75,4 +79,16 @@ class DiceRollerFragment : Fragment() {
     private fun rollSpecificDice(count: Int): List<Int> {
         return List(count) { Random.nextInt(1, 7) }
     }
+
+    private fun rollD66() {
+        val tens = rollD6()
+        val units = rollD6()
+        val result = tens * 10 + units
+        rolledDiceResultView.text = "d66 Roll: $result"
+    }
+
+    private fun rollD6(): Int {
+        return Random.nextInt(1, 7)
+    }
+
 }

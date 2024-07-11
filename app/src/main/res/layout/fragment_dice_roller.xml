@@ -90,6 +90,14 @@
         android:text="Roll Dice"
         android:layout_marginTop="16dp" />
 
+    <!-- Roll D66 Button -->
+    <Button
+        android:id="@+id/button_roll_d66"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Roll d66"
+        android:layout_marginTop="16dp" />
+
     <!-- Display Rolled Dice -->
     <TextView
         android:id="@+id/rolled_dice_result"
