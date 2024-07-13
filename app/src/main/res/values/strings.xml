@@ -13,5 +13,100 @@
     <string name="menu_character_sheet">Character Sheet</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ALIEN_EGG">Alien Logo</string>
+
+
+    <!-- General Labels -->
     <string name="character_information">Character Information</string>
+    <string name="label_name">Name</string>
+    <string name="hint_name">Write your name here.</string>
+    <string name="label_career">Career</string>
+    <string name="hint_career">Write down your career here.</string>
+    <string name="label_appearance">Appearance</string>
+    <string name="hint_appearance">Describe your character here.</string>
+    <string name="label_talents">Talents</string>
+    <string name="hint_talents">Enter talents here</string>
+    <string name="label_personal_agenda">Personal Agenda</string>
+    <string name="hint_personal_agenda">Enter personal agenda</string>
+    <string name="label_relationships">Relationships</string>
+    <string name="label_rival">Rival</string>
+    <string name="hint_rival">Write the name of your rival here.</string>
+    <string name="label_buddy">Buddy</string>
+    <string name="hint_buddy">Write the name of your buddy here.</string>
+
+    <!-- Stress, Health, and Radiation -->
+    <string name="label_shr">Stress, Health, and Radiation</string>
+    <string name="label_stress_level">Stress Level:</string>
+    <string name="label_health">Health:</string>
+    <string name="label_radiation">Radiation:</string>
+
+    <!-- Consumables -->
+    <string name="label_consumables">Consumables</string>
+    <string name="label_air">Air:</string>
+    <string name="label_food">Food:</string>
+    <string name="label_power">Power:</string>
+    <string name="label_water">Water:</string>
+
+    <!-- Attributes and Skills -->
+    <string name="label_attributes_and_skills">Attributes and Skills</string>
+    <string name="label_strength">Strength</string>
+    <string name="label_close_combat">Close Combat</string>
+    <string name="label_heavy_machinery">Heavy Machinery</string>
+    <string name="label_stamina">Stamina</string>
+    <string name="label_agility">Agility</string>
+    <string name="label_ranged_combat">Ranged Combat</string>
+    <string name="label_mobility">Mobility</string>
+    <string name="label_piloting">Piloting</string>
+    <string name="label_empathy">Empathy</string>
+    <string name="label_command">Command</string>
+    <string name="label_manipulation">Manipulation</string>
+    <string name="label_medical">Medical</string>
+    <string name="label_wits">Wits</string>
+    <string name="label_observation">Observation</string>
+    <string name="label_survival">Survival</string>
+    <string name="label_comtech">Comtech</string>
+    <string name="hint_number_1_6">Enter a number 1-6</string>
+
+    <!-- Experience and Story Points -->
+    <string name="label_experience_points">Experience Points</string>
+    <string name="label_story_points">Story Points</string>
+
+    <!-- Gear -->
+    <string name="label_gear">Gear</string>
+    <string name="hint_gear1">Gear 1</string>
+    <string name="hint_gear2">Gear 2</string>
+    <string name="hint_gear3">Gear 3</string>
+    <string name="hint_gear4">Gear 4</string>
+    <string name="hint_gear5">Gear 5</string>
+    <string name="hint_gear6">Gear 6</string>
+    <string name="hint_gear7">Gear 7</string>
+    <string name="hint_gear8">Gear 8</string>
+    <string name="hint_gear9">Gear 9</string>
+    <string name="hint_gear10">Gear 10</string>
+
+    <!-- Weapons -->
+    <string name="label_weapons">Weapons</string>
+    <string name="label_weapon1">Weapon 1</string>
+    <string name="label_weapon2">Weapon 2</string>
+    <string name="label_weapon3">Weapon 3</string>
+    <string name="label_weapon4">Weapon 4</string>
+    <string name="label_weapon_name">Name</string>
+    <string name="label_weapon_bonus">Bonus</string>
+    <string name="label_weapon_damage">Damage</string>
+    <string name="label_weapon_range">Range</string>
+
+    <!-- Armor -->
+    <string name="label_armor">Armor</string>
+    <string name="hint_armor_name">Armor Name</string>
+    <string name="hint_armor_rating">Armor Rating</string>
+
+    <!-- Save and Load Buttons -->
+    <string name="label_save_character">Save Character</string>
+    <string name="label_load_character">Load Character</string>
+
+    <string name="button_add">+</string>
+    <string name="button_subtract">-</string>
+
+    <!-- Default Values -->
+    <string name="default_value_0">0</string>
+
 </resources>

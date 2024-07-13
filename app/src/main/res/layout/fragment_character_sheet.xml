@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="@string/label_name"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="4dp" />
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
-                android:hint="Write your name here."
+                android:hint="@string/hint_name"
                 android:autofillHints="name"
                 android:inputType="textPersonName" />
         </LinearLayout>
@@ -52,7 +52,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Career"
+                android:text="@string/label_career"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="4dp" />
@@ -62,8 +62,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
-                android:hint="Write down your career here."
-                android:inputType="text" />
+                android:hint="@string/hint_career"
+                android:inputType="text"
+                android:autofillHints="jobTitle"/>
         </LinearLayout>
 
         <!-- Appearance -->
@@ -76,7 +77,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Appearance"
+                android:text="@string/label_appearance"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="4dp" />
@@ -86,18 +87,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
-                android:hint="Describe your character here."
+                android:hint="@string/hint_appearance"
                 android:inputType="textMultiLine"
                 android:minLines="3"
                 android:maxLines="5"
-                android:gravity="top" />
+                android:gravity="top"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Talents -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Talents"
+            android:text="@string/label_talents"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -106,16 +108,17 @@
             android:id="@+id/et_talents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter talents here"
+            android:hint="@string/hint_talents"
             android:inputType="textMultiLine"
             android:gravity="top"
-            android:minLines="3" />
+            android:minLines="3"
+            android:autofillHints="none" />
 
         <!-- Personal Agenda -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Personal Agenda"
+            android:text="@string/label_personal_agenda"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -125,13 +128,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
-            android:hint="Enter personal agenda" />
+            android:hint="@string/hint_personal_agenda"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <!-- Relationships -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Relationships"
+            android:text="@string/label_relationships"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -146,7 +151,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rival"
+                android:text="@string/label_rival"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="4dp" />
@@ -156,8 +161,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
-                android:hint="Write your rival's name here."
-                android:inputType="textPersonName" />
+                android:hint="@string/hint_rival"
+                android:inputType="textPersonName"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Buddy -->
@@ -170,7 +176,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Buddy"
+                android:text="@string/label_buddy"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="4dp" />
@@ -178,17 +184,18 @@
             <EditText
                 android:id="@+id/et_buddy"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:minHeight="48dp"
-                android:hint="Write your buddy's name here."
-                android:inputType="textPersonName" />
+                android:hint="@string/hint_buddy"
+                android:inputType="textPersonName"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Stress, Health, and Radiation -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stress, Health, and Radiation"
+            android:text="@string/label_shr"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -202,7 +209,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stress Level: " />
+                android:text="@string/label_stress_level" />
 
             <EditText
                 android:id="@+id/et_stress_level"
@@ -213,20 +220,21 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
-                android:text="0"
-                android:gravity="center" />
+                android:text="@string/default_value_0"
+                android:gravity="center"
+                android:autofillHints="none" />
 
             <Button
                 android:id="@+id/btn_add_stress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+" />
+                android:text="@string/button_add" />
 
             <Button
                 android:id="@+id/btn_subtract_stress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-" />
+                android:text="@string/button_subtract" />
         </LinearLayout>
 
         <LinearLayout
@@ -239,7 +247,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Health: " />
+                android:text="@string/label_health" />
 
             <EditText
                 android:id="@+id/et_health"
@@ -250,20 +258,21 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
-                android:text="0"
-                android:gravity="center" />
+                android:text="@string/default_value_0"
+                android:gravity="center"
+                android:autofillHints="none" />
 
             <Button
                 android:id="@+id/btn_add_health"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+" />
+                android:text="@string/button_add" />
 
             <Button
                 android:id="@+id/btn_subtract_health"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-" />
+                android:text="@string/button_subtract" />
         </LinearLayout>
 
         <LinearLayout
@@ -276,7 +285,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Radiation: " />
+                android:text="@string/label_radiation" />
 
             <EditText
                 android:id="@+id/et_radiation"
@@ -287,27 +296,28 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
-                android:text="0"
-                android:gravity="center" />
+                android:text="@string/default_value_0"
+                android:gravity="center"
+                android:autofillHints="none" />
 
             <Button
                 android:id="@+id/btn_add_radiation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+" />
+                android:text="@string/button_add" />
 
             <Button
                 android:id="@+id/btn_subtract_radiation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-" />
+                android:text="@string/button_subtract" />
         </LinearLayout>
 
         <!-- Consumables -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Consumables"
+            android:text="@string/label_consumables"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -321,7 +331,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Air: " />
+                android:text="@string/label_air" />
 
             <EditText
                 android:id="@+id/et_air"
@@ -331,20 +341,21 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
-                android:text="0"
-                android:gravity="center" />
+                android:text="@string/default_value_0"
+                android:gravity="center"
+                android:autofillHints="none" />
 
             <Button
                 android:id="@+id/btn_add_air"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+" />
+                android:text="@string/button_add" />
 
             <Button
                 android:id="@+id/btn_subtract_air"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-" />
+                android:text="@string/button_subtract" />
         </LinearLayout>
 
         <LinearLayout
@@ -357,7 +368,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Food: " />
+                android:text="@string/label_food" />
 
             <EditText
                 android:id="@+id/et_food"
@@ -367,20 +378,21 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
-                android:text="0"
-                android:gravity="center" />
+                android:text="@string/default_value_0"
+                android:gravity="center"
+                android:autofillHints="none" />
 
             <Button
                 android:id="@+id/btn_add_food"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+" />
+                android:text="@string/button_add" />
 
             <Button
                 android:id="@+id/btn_subtract_food"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-" />
+                android:text="@string/button_subtract" />
         </LinearLayout>
 
         <LinearLayout
@@ -393,7 +405,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Power: " />
+                android:text="@string/label_power" />
 
             <EditText
                 android:id="@+id/et_power"
@@ -403,20 +415,21 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
-                android:text="0"
-                android:gravity="center" />
+                android:text="@string/default_value_0"
+                android:gravity="center"
+                android:autofillHints="none" />
 
             <Button
                 android:id="@+id/btn_add_power"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+" />
+                android:text="@string/button_add" />
 
             <Button
                 android:id="@+id/btn_subtract_power"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-" />
+                android:text="@string/button_subtract" />
         </LinearLayout>
 
         <LinearLayout
@@ -429,7 +442,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Water: " />
+                android:text="@string/label_water" />
 
             <EditText
                 android:id="@+id/et_water"
@@ -439,27 +452,28 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
-                android:text="0"
-                android:gravity="center" />
+                android:text="@string/default_value_0"
+                android:gravity="center"
+                android:autofillHints="none" />
 
             <Button
                 android:id="@+id/btn_add_water"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+" />
+                android:text="@string/button_add" />
 
             <Button
                 android:id="@+id/btn_subtract_water"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="-" />
+                android:text="@string/button_subtract" />
         </LinearLayout>
 
         <!-- Attributes and Skills -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Attributes and Skills"
+            android:text="@string/label_attributes_and_skills"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -475,7 +489,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Strength"
+                android:text="@string/label_strength"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -485,8 +499,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Strength"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- May use this later.
@@ -506,12 +521,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Close Combat"
+                android:text="@string/label_close_combat"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -521,8 +537,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Close Combat"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- May use this later.
@@ -543,12 +560,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Heavy Machinery"
+                android:text="@string/label_heavy_machinery"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -558,8 +576,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Heavy Machinery"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- May use this later.
@@ -580,12 +599,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stamina"
+                android:text="@string/label_stamina"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -595,8 +615,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Stamina"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- May use this later.
@@ -621,7 +642,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Agility"
+                android:text="@string/label_agility"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -631,8 +652,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Agility"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Ranged Combat -->
@@ -642,12 +664,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ranged Combat"
+                android:text="@string/label_ranged_combat"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -657,8 +680,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Ranged Combat"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Mobility -->
@@ -668,12 +692,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mobility"
+                android:text="@string/label_mobility"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -683,8 +708,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Mobility"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Piloting -->
@@ -694,12 +720,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Piloting"
+                android:text="@string/label_piloting"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -709,8 +736,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Piloting"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Empathy -->
@@ -724,7 +752,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Empathy"
+                android:text="@string/label_empathy"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -734,8 +762,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Empathy"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Command -->
@@ -745,12 +774,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Command"
+                android:text="@string/label_command"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -760,8 +790,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Command"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Manipulation -->
@@ -771,12 +802,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Manipulation"
+                android:text="@string/label_manipulation"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -786,8 +818,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Manipulation"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Medical -->
@@ -797,12 +830,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Medical"
+                android:text="@string/label_medical"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -812,8 +846,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Medical"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Wits -->
@@ -827,7 +862,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wits"
+                android:text="@string/label_wits"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -837,8 +872,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Wits"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Observation -->
@@ -848,12 +884,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Observation"
+                android:text="@string/label_observation"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -863,8 +900,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Observation"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Survival -->
@@ -874,12 +912,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Survival"
+                android:text="@string/label_survival"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -889,8 +928,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Survival"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Comtech -->
@@ -900,12 +940,13 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:paddingStart="32dp">
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Comtech"
+                android:text="@string/label_comtech"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="16dp" />
@@ -915,15 +956,16 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Comtech"
-                android:inputType="number" />
+                android:hint="@string/hint_number_1_6"
+                android:inputType="number"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Experience Points -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Experience Points"
+            android:text="@string/label_experience_points"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -932,14 +974,15 @@
             android:id="@+id/et_experience_points"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="0"
-            android:inputType="number" />
+            android:hint="@string/default_value_0"
+            android:inputType="number"
+            android:autofillHints="none" />
 
         <!-- Story Points -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Story Points"
+            android:text="@string/label_story_points"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -948,14 +991,15 @@
             android:id="@+id/et_story_points"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="0"
-            android:inputType="number" />
+            android:hint="@string/default_value_0"
+            android:inputType="number"
+            android:autofillHints="none" />
 
         <!-- Gear -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gear"
+            android:text="@string/label_gear"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -964,67 +1008,87 @@
             android:id="@+id/et_gear1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gear 1" />
+            android:hint="@string/hint_gear1"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <EditText
             android:id="@+id/et_gear2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gear 2" />
+            android:hint="@string/hint_gear2"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <EditText
             android:id="@+id/et_gear3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gear 3" />
+            android:hint="@string/hint_gear3"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <EditText
             android:id="@+id/et_gear4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gear 4" />
+            android:hint="@string/hint_gear4"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <EditText
             android:id="@+id/et_gear5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gear 5" />
+            android:hint="@string/hint_gear5"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <EditText
             android:id="@+id/et_gear6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gear 6" />
+            android:hint="@string/hint_gear6"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <EditText
             android:id="@+id/et_gear7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gear 7" />
+            android:hint="@string/hint_gear7"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <EditText
             android:id="@+id/et_gear8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gear 8" />
+            android:hint="@string/hint_gear8"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <EditText
             android:id="@+id/et_gear9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gear 9" />
+            android:hint="@string/hint_gear9"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <EditText
             android:id="@+id/et_gear10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Gear 10" />
+            android:hint="@string/hint_gear10"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <!-- Weapons -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Weapons"
+            android:text="@string/label_weapons"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -1042,32 +1106,36 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Weapon 1 Name"
-                android:inputType="text" />
+                android:hint="@string/label_weapon1"
+                android:inputType="text"
+                android:autofillHints="none" />
 
             <EditText
                 android:id="@+id/et_weapon1_bonus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Bonus"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_bonus"
+                android:inputType="text"
+                android:autofillHints="none" />
 
             <EditText
                 android:id="@+id/et_weapon1_damage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Damage"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_damage"
+                android:inputType="text"
+                android:autofillHints="none"/>
 
             <EditText
                 android:id="@+id/et_weapon1_range"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Range"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_range"
+                android:inputType="text"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Weapon 2 -->
@@ -1083,32 +1151,36 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Weapon 2 Name"
-                android:inputType="text" />
+                android:hint="@string/label_weapon2"
+                android:inputType="text"
+                android:autofillHints="none" />
 
             <EditText
                 android:id="@+id/et_weapon2_bonus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Bonus"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_bonus"
+                android:inputType="text"
+                android:autofillHints="none" />
 
             <EditText
                 android:id="@+id/et_weapon2_damage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Damage"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_damage"
+                android:inputType="text"
+                android:autofillHints="none" />
 
             <EditText
                 android:id="@+id/et_weapon2_range"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Range"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_range"
+                android:inputType="text"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Weapon 3 -->
@@ -1124,32 +1196,36 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Weapon 3 Name"
-                android:inputType="text" />
+                android:hint="@string/label_weapon3"
+                android:inputType="text"
+                android:autofillHints="none" />
 
             <EditText
                 android:id="@+id/et_weapon3_bonus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Bonus"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_bonus"
+                android:inputType="text"
+                android:autofillHints="none" />
 
             <EditText
                 android:id="@+id/et_weapon3_damage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Damage"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_damage"
+                android:inputType="text"
+                android:autofillHints="none"/>
 
             <EditText
                 android:id="@+id/et_weapon3_range"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Range"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_range"
+                android:inputType="text"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Weapon 4 -->
@@ -1165,39 +1241,43 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Weapon 4 Name"
-                android:inputType="text" />
+                android:hint="@string/label_weapon4"
+                android:inputType="text"
+                android:autofillHints="none" />
 
             <EditText
                 android:id="@+id/et_weapon4_bonus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Bonus"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_bonus"
+                android:inputType="text"
+                android:autofillHints="none"/>
 
             <EditText
                 android:id="@+id/et_weapon4_damage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Damage"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_damage"
+                android:inputType="text"
+                android:autofillHints="none" />
 
             <EditText
                 android:id="@+id/et_weapon4_range"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="Range"
-                android:inputType="text" />
+                android:hint="@string/label_weapon_range"
+                android:inputType="text"
+                android:autofillHints="none" />
         </LinearLayout>
 
         <!-- Armor -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Armor"
+            android:text="@string/label_armor"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
@@ -1206,13 +1286,17 @@
             android:id="@+id/et_armor_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Armor Name" />
+            android:hint="@string/hint_armor_name"
+            android:inputType="text"
+            android:autofillHints="none" />
 
         <EditText
             android:id="@+id/et_armor_rating"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Armor Rating" />
+            android:hint="@string/hint_armor_rating"
+            android:inputType="text"
+            android:autofillHints="none" />
 
 
         <!-- Save and Load Buttons -->
@@ -1222,20 +1306,23 @@
             android:orientation="horizontal"
             android:gravity="end"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="16dp"
+            style="?android:attr/buttonBarStyle">
 
             <Button
                 android:id="@+id/btn_save_character"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Save Character" />
+                android:text="@string/label_save_character"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/btn_load_character"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Load Character"
-                android:layout_marginStart="8dp" />
+                android:text="@string/label_load_character"
+                android:layout_marginStart="8dp"
+                style="?android:attr/buttonBarButtonStyle" />
         </LinearLayout>
 
 

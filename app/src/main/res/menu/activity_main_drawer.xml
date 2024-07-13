@@ -24,5 +24,11 @@
             android:id="@+id/nav_character_sheet"
             android:icon="@drawable/ic_menu_character_sheet"
             android:title="@string/menu_character_sheet" />
+
+        <item
+            android:id="@+id/nav_notes_and_logs"
+            android:icon="@drawable/ic_menu_notes_and_logs"
+        android:title="Notes and Logs" />
+
     </group>
 </menu>
