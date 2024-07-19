@@ -8,9 +8,10 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_notes_and_logs">Notes and Logs</string>
+    <string name="menu_inventory_tracker">Inventory Tracker</string>
     <string name="menu_character_sheet">Character Sheet</string>
+    <string name="menu_dice_roller">Dice Roller</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="ALIEN_EGG">Alien Logo</string>
 
@@ -38,6 +39,12 @@
     <string name="label_stress_level">Stress Level:</string>
     <string name="label_health">Health:</string>
     <string name="label_radiation">Radiation:</string>
+    <string name="describe_add_stress">Add stress</string>
+    <string name="describe_add_health">Add health</string>
+    <string name="describe_add_radiation">Add radiation</string>
+    <string name="describe_subtract_stress">Subtract stress</string>
+    <string name="describe_subtract_health">Subtract health</string>
+    <string name="describe_subtract_radiation">Subtract radiation</string>
 
     <!-- Consumables -->
     <string name="label_consumables">Consumables</string>

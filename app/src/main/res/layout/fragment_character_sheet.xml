@@ -228,13 +228,22 @@
                 android:id="@+id/btn_add_stress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_add" />
+                android:text="@string/button_add"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                android:contentDescription="@string/describe_add_stress" />
 
             <Button
                 android:id="@+id/btn_subtract_stress"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_subtract" />
+                android:text="@string/button_subtract"
+                android:padding="12dp"
+                android:minHeight="48dp"
+                android:minWidth="48dp"
+                android:contentDescription="@string/describe_subtract_stress" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -266,13 +275,15 @@
                 android:id="@+id/btn_add_health"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_add" />
+                android:text="@string/button_add"
+                android:contentDescription="@string/describe_add_health" />
 
             <Button
                 android:id="@+id/btn_subtract_health"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_subtract" />
+                android:text="@string/button_subtract"
+                android:contentDescription="@string/describe_subtract_health" />
         </LinearLayout>
 
         <LinearLayout
@@ -304,13 +315,16 @@
                 android:id="@+id/btn_add_radiation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_add" />
+                android:text="@string/button_add"
+                android:contentDescription="@string/describe_add_radiation" />
 
             <Button
                 android:id="@+id/btn_subtract_radiation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_subtract" />
+                android:text="@string/button_subtract"
+                android:contentDescription="@string/describe_subtract_radiation" />
+
         </LinearLayout>
 
         <!-- Consumables -->
@@ -995,308 +1009,7 @@
             android:inputType="number"
             android:autofillHints="none" />
 
-        <!-- Gear -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_gear"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp" />
 
-        <EditText
-            android:id="@+id/et_gear1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_gear1"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <EditText
-            android:id="@+id/et_gear2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_gear2"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <EditText
-            android:id="@+id/et_gear3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_gear3"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <EditText
-            android:id="@+id/et_gear4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_gear4"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <EditText
-            android:id="@+id/et_gear5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_gear5"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <EditText
-            android:id="@+id/et_gear6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_gear6"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <EditText
-            android:id="@+id/et_gear7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_gear7"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <EditText
-            android:id="@+id/et_gear8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_gear8"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <EditText
-            android:id="@+id/et_gear9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_gear9"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <EditText
-            android:id="@+id/et_gear10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_gear10"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <!-- Weapons -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_weapons"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp" />
-
-        <!-- Weapon 1 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginTop="8dp">
-
-            <EditText
-                android:id="@+id/et_weapon1_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon1"
-                android:inputType="text"
-                android:autofillHints="none" />
-
-            <EditText
-                android:id="@+id/et_weapon1_bonus"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_bonus"
-                android:inputType="text"
-                android:autofillHints="none" />
-
-            <EditText
-                android:id="@+id/et_weapon1_damage"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_damage"
-                android:inputType="text"
-                android:autofillHints="none"/>
-
-            <EditText
-                android:id="@+id/et_weapon1_range"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_range"
-                android:inputType="text"
-                android:autofillHints="none" />
-        </LinearLayout>
-
-        <!-- Weapon 2 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginTop="8dp">
-
-            <EditText
-                android:id="@+id/et_weapon2_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon2"
-                android:inputType="text"
-                android:autofillHints="none" />
-
-            <EditText
-                android:id="@+id/et_weapon2_bonus"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_bonus"
-                android:inputType="text"
-                android:autofillHints="none" />
-
-            <EditText
-                android:id="@+id/et_weapon2_damage"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_damage"
-                android:inputType="text"
-                android:autofillHints="none" />
-
-            <EditText
-                android:id="@+id/et_weapon2_range"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_range"
-                android:inputType="text"
-                android:autofillHints="none" />
-        </LinearLayout>
-
-        <!-- Weapon 3 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginTop="8dp">
-
-            <EditText
-                android:id="@+id/et_weapon3_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon3"
-                android:inputType="text"
-                android:autofillHints="none" />
-
-            <EditText
-                android:id="@+id/et_weapon3_bonus"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_bonus"
-                android:inputType="text"
-                android:autofillHints="none" />
-
-            <EditText
-                android:id="@+id/et_weapon3_damage"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_damage"
-                android:inputType="text"
-                android:autofillHints="none"/>
-
-            <EditText
-                android:id="@+id/et_weapon3_range"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_range"
-                android:inputType="text"
-                android:autofillHints="none" />
-        </LinearLayout>
-
-        <!-- Weapon 4 -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginTop="8dp">
-
-            <EditText
-                android:id="@+id/et_weapon4_name"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon4"
-                android:inputType="text"
-                android:autofillHints="none" />
-
-            <EditText
-                android:id="@+id/et_weapon4_bonus"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_bonus"
-                android:inputType="text"
-                android:autofillHints="none"/>
-
-            <EditText
-                android:id="@+id/et_weapon4_damage"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_damage"
-                android:inputType="text"
-                android:autofillHints="none" />
-
-            <EditText
-                android:id="@+id/et_weapon4_range"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="@string/label_weapon_range"
-                android:inputType="text"
-                android:autofillHints="none" />
-        </LinearLayout>
-
-        <!-- Armor -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/label_armor"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp" />
-
-        <EditText
-            android:id="@+id/et_armor_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_armor_name"
-            android:inputType="text"
-            android:autofillHints="none" />
-
-        <EditText
-            android:id="@+id/et_armor_rating"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/hint_armor_rating"
-            android:inputType="text"
-            android:autofillHints="none" />
 
 
         <!-- Save and Load Buttons -->

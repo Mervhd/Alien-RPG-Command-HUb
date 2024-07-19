@@ -12,16 +12,16 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.alienrpgcommandhub.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_character_sheet"
+        android:name="com.example.alienrpgcommandhub.UI.CharacterSheetFragment"
+        android:label="Character Sheet"
+        tools:layout="@layout/fragment_character_sheet" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.alienrpgcommandhub.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_inventory_tracker"
+        android:name="com.example.alienrpgcommandhub.ui.InventoryTracker"
+        android:label="Inventory Tracker"
+        tools:layout="@layout/fragment_inventory_tracker" />
 
     <fragment
         android:id="@+id/nav_dice_roller"
@@ -29,11 +29,7 @@
         android:label="Dice Roller"
         tools:layout="@layout/fragment_dice_roller" />
 
-    <fragment
-        android:id="@+id/nav_character_sheet"
-        android:name="com.example.alienrpgcommandhub.UI.CharacterSheetFragment"
-        android:label="Character Sheet"
-        tools:layout="@layout/fragment_character_sheet" />
+
 
     <fragment
         android:id="@+id/nav_notes_and_logs"

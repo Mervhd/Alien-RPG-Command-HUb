@@ -8,27 +8,26 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
             android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
-            android:id="@+id/nav_dice_roller"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Dice Roller" />
+
         <item
             android:id="@+id/nav_character_sheet"
             android:icon="@drawable/ic_menu_character_sheet"
             android:title="@string/menu_character_sheet" />
 
         <item
+            android:id="@+id/nav_dice_roller"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_dice_roller" />
+
+        <item
+            android:id="@+id/nav_inventory_tracker"
+            android:icon="@drawable/ic_menu_inventory"
+            android:title="@string/menu_inventory_tracker" />
+
+        <item
             android:id="@+id/nav_notes_and_logs"
             android:icon="@drawable/ic_menu_notes_and_logs"
-        android:title="Notes and Logs" />
+        android:title="@string/menu_notes_and_logs" />
 
     </group>
 </menu>
