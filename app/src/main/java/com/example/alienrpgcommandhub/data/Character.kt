@@ -38,8 +38,8 @@ data class Character(
     val comtech: Int,
     val experiencePoints: Int,
     val storyPoints: Int,
-    val gear: List<String>,
-    val weapons: List<Weapon>,
+    val gear: List<String> = emptyList(),
+    val weapons: List<Weapon> = emptyList(),
     val armorName: String,
     val armorRating: Int
 )

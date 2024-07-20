@@ -1,4 +1,4 @@
-package com.example.alienrpgcommandhub.UI
+package com.example.alienrpgcommandhub
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.example.alienrpgcommandhub.R
 import com.example.alienrpgcommandhub.data.AppDatabase
 import com.example.alienrpgcommandhub.data.Character
 import com.example.alienrpgcommandhub.data.Weapon
@@ -47,12 +46,12 @@ class CharacterSheetFragment : Fragment() {
     private lateinit var survivalEditText: EditText
     private lateinit var comtechEditText: EditText
     private lateinit var experiencePointsEditText: EditText
-    private lateinit var storyPointsEditText: EditText
-    private lateinit var gearEditTexts: List<EditText>
-    private lateinit var weaponNameEditText: EditText
-    private lateinit var weaponBonusEditText: EditText
-    private lateinit var weaponDamageEditText: EditText
-    private lateinit var weaponRangeEditText: EditText
+    private lateinit var storyPointsEditText: EditText   // Moved to Inventory tracker
+    // private lateinit var gearEditTexts: List<EditText>   // Moved to Inventory tracker
+    // private lateinit var weaponNameEditText: EditText    // Moved to Inventory tracker
+    // private lateinit var weaponBonusEditText: EditText   // Moved to Inventory tracker
+    //private lateinit var weaponDamageEditText: EditText   // Moved to Inventory tracker
+    //private lateinit var weaponRangeEditText: EditText    // Moved to Inventory tracker
     private lateinit var armorNameEditText: EditText
     private lateinit var armorRatingEditText: EditText
     private lateinit var saveButton: Button
@@ -112,22 +111,22 @@ class CharacterSheetFragment : Fragment() {
         comtechEditText = view.findViewById(R.id.et_comtech)
         experiencePointsEditText = view.findViewById(R.id.et_experience_points)
         storyPointsEditText = view.findViewById(R.id.et_story_points)
-        gearEditTexts = listOf(
-            view.findViewById(R.id.et_gear1),
-            view.findViewById(R.id.et_gear2),
-            view.findViewById(R.id.et_gear3),
-            view.findViewById(R.id.et_gear4),
-            view.findViewById(R.id.et_gear5),
-            view.findViewById(R.id.et_gear6),
-            view.findViewById(R.id.et_gear7),
-            view.findViewById(R.id.et_gear8),
-            view.findViewById(R.id.et_gear9),
-            view.findViewById(R.id.et_gear10)
-        )
-        weaponNameEditText = view.findViewById(R.id.et_weapon1_name)
-        weaponBonusEditText = view.findViewById(R.id.et_weapon1_bonus)
-        weaponDamageEditText = view.findViewById(R.id.et_weapon1_damage)
-        weaponRangeEditText = view.findViewById(R.id.et_weapon1_range)
+       // gearEditTexts = listOf(
+       //     view.findViewById(R.id.et_gear1),
+       //     view.findViewById(R.id.et_gear2),
+       //     view.findViewById(R.id.et_gear3),                 Moved to Inventory tracker
+       //     view.findViewById(R.id.et_gear4),
+       //     view.findViewById(R.id.et_gear5),
+       //     view.findViewById(R.id.et_gear6),
+       //     view.findViewById(R.id.et_gear7),
+       //     view.findViewById(R.id.et_gear8),
+       //     view.findViewById(R.id.et_gear9),
+       //     view.findViewById(R.id.et_gear10)
+       // )
+        // weaponNameEditText = view.findViewById(R.id.et_weapon1_name)
+        // weaponBonusEditText = view.findViewById(R.id.et_weapon1_bonus)
+        // weaponDamageEditText = view.findViewById(R.id.et_weapon1_damage)   Moved to Inventory tracker
+        // weaponRangeEditText = view.findViewById(R.id.et_weapon1_range)
         armorNameEditText = view.findViewById(R.id.et_armor_name)
         armorRatingEditText = view.findViewById(R.id.et_armor_rating)
         saveButton = view.findViewById(R.id.btn_save_character)
@@ -264,7 +263,8 @@ class CharacterSheetFragment : Fragment() {
             comtech = comtechEditText.text.toString().toIntOrNull() ?: 0,
             experiencePoints = experiencePointsEditText.text.toString().toIntOrNull() ?: 0,
             storyPoints = storyPointsEditText.text.toString().toIntOrNull() ?: 0,
-            gear = gearEditTexts.map { it.text.toString() },
+
+            /*gear = gearEditTexts.map { it.text.toString() },
             weapons = listOf(
                 Weapon(
                     name = weaponNameEditText.text.toString(),
@@ -272,7 +272,8 @@ class CharacterSheetFragment : Fragment() {
                     damage = weaponDamageEditText.text.toString().toIntOrNull() ?: 0,
                     range = weaponRangeEditText.text.toString()
                 )
-            ),
+            ), */
+
             armorName = armorNameEditText.text.toString(),
             armorRating = armorRatingEditText.text.toString().toIntOrNull() ?: 0
         )

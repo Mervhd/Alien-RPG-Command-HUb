@@ -1,4 +1,4 @@
-package com.example.alienrpgcommandhub.UI
+package com.example.alienrpgcommandhub
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -12,7 +12,6 @@
         android:padding="16dp">
 
         <!-- Gear Section -->
-        <!-- Gear -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,81 +24,91 @@
             android:id="@+id/et_gear1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="none"
             android:hint="@string/hint_gear1"
             android:inputType="text"
-            android:autofillHints="none" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_gear2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="none"
             android:hint="@string/hint_gear2"
             android:inputType="text"
-            android:autofillHints="none" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_gear3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="none"
             android:hint="@string/hint_gear3"
             android:inputType="text"
-            android:autofillHints="none" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_gear4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="none"
             android:hint="@string/hint_gear4"
             android:inputType="text"
-            android:autofillHints="none" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_gear5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="none"
             android:hint="@string/hint_gear5"
             android:inputType="text"
-            android:autofillHints="none" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_gear6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="none"
             android:hint="@string/hint_gear6"
             android:inputType="text"
-            android:autofillHints="none" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_gear7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="none"
             android:hint="@string/hint_gear7"
             android:inputType="text"
-            android:autofillHints="none" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_gear8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="none"
             android:hint="@string/hint_gear8"
             android:inputType="text"
-            android:autofillHints="none" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_gear9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="none"
             android:hint="@string/hint_gear9"
             android:inputType="text"
-            android:autofillHints="none" />
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/et_gear10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:autofillHints="none"
             android:hint="@string/hint_gear10"
             android:inputType="text"
-            android:autofillHints="none" />
+            android:minHeight="48dp" />
 
         <!-- Weapons -->
         <TextView
@@ -123,6 +132,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minHeight="48dp"
                 android:hint="@string/label_weapon1"
                 android:inputType="text"
                 android:autofillHints="none" />
@@ -132,27 +142,31 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/label_weapon_bonus"
+                android:minHeight="48dp"
+                android:autofillHints="none"
+                android:hint="@string/content_description_weapon1_bonus"
                 android:inputType="text"
-                android:autofillHints="none" />
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <EditText
                 android:id="@+id/et_weapon1_damage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/label_weapon_damage"
-                android:inputType="text"
-                android:autofillHints="none"/>
+                android:minHeight="48dp"
+                android:autofillHints="none"
+                android:hint="@string/content_description_weapon1_damage"
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/et_weapon1_range"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/label_weapon_range"
-                android:inputType="text"
-                android:autofillHints="none" />
+                android:minHeight="48dp"
+                android:autofillHints="none"
+                android:hint="@string/content_description_weapon1_range"
+                android:inputType="text" />
         </LinearLayout>
 
         <!-- Weapon 2 -->
@@ -168,6 +182,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:minHeight="48dp"
                 android:hint="@string/label_weapon2"
                 android:inputType="text"
                 android:autofillHints="none" />
@@ -177,7 +192,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/label_weapon_bonus"
+                android:minHeight="48dp"
+                android:hint="@string/content_description_weapon2_bonus"
                 android:inputType="text"
                 android:autofillHints="none" />
 
@@ -186,7 +202,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/label_weapon_damage"
+                android:minHeight="48dp"
+                android:hint="@string/content_description_weapon2_damage"
                 android:inputType="text"
                 android:autofillHints="none" />
 
@@ -195,7 +212,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/label_weapon_range"
+                android:minHeight="48dp"
+                android:hint="@string/content_description_weapon2_range"
                 android:inputType="text"
                 android:autofillHints="none" />
         </LinearLayout>
@@ -222,7 +240,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/label_weapon_bonus"
+                android:hint="@string/content_description_weapon3_bonus"
                 android:inputType="text"
                 android:autofillHints="none" />
 
@@ -231,7 +249,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/label_weapon_damage"
+                android:hint="@string/content_description_weapon3_damage"
                 android:inputType="text"
                 android:autofillHints="none"/>
 
@@ -240,7 +258,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:hint="@string/label_weapon_range"
+                android:hint="@string/content_description_weapon3_range"
                 android:inputType="text"
                 android:autofillHints="none" />
         </LinearLayout>
@@ -303,6 +321,7 @@
             android:id="@+id/et_armor_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxWidth="488dp"
             android:hint="@string/hint_armor_name"
             android:inputType="text"
             android:autofillHints="none" />
@@ -311,6 +330,7 @@
             android:id="@+id/et_armor_rating"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxWidth="488dp"
             android:hint="@string/hint_armor_rating"
             android:inputType="text"
             android:autofillHints="none" />

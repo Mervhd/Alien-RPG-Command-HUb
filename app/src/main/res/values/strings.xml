@@ -116,4 +116,18 @@
     <!-- Default Values -->
     <string name="default_value_0">0</string>
 
+    <!-- Content Descriptions -->
+    <string name="content_description_weapon1_damage">Weapon 1 Damage</string>
+    <string name="content_description_weapon1_bonus">Weapon 1 Bonus</string>
+    <string name="content_description_weapon1_range">Weapon 1 Range</string>
+    <string name="content_description_weapon2_damage">Weapon 2 Damage</string>
+    <string name="content_description_weapon2_bonus">Weapon 2 Bonus</string>
+    <string name="content_description_weapon2_range">Weapon 2 Range</string>
+    <string name="content_description_weapon3_damage">Weapon 3 Damage</string>
+    <string name="content_description_weapon3_bonus">Weapon 3 Bonus</string>
+    <string name="content_description_weapon3_range">Weapon 3 Range</string>
+    <string name="content_description_weapon4_damage">Weapon 4 Damage</string>
+    <string name="content_description_weapon4_bonus">Weapon 4 Bonus</string>
+    <string name="content_description_weapon4_range">Weapon 4 Range</string>
+
 </resources>
