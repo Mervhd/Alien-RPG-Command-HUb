@@ -36,6 +36,7 @@
                 android:id="@+id/et_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxWidth="488dp"
                 android:minHeight="48dp"
                 android:hint="@string/hint_name"
                 android:autofillHints="name"
@@ -61,6 +62,7 @@
                 android:id="@+id/et_career"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxWidth="488dp"
                 android:minHeight="48dp"
                 android:hint="@string/hint_career"
                 android:inputType="text"
@@ -86,6 +88,7 @@
                 android:id="@+id/et_appearance"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxWidth="488dp"
                 android:minHeight="48dp"
                 android:hint="@string/hint_appearance"
                 android:inputType="textMultiLine"
@@ -108,6 +111,7 @@
             android:id="@+id/et_talents"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxWidth="488dp"
             android:hint="@string/hint_talents"
             android:inputType="textMultiLine"
             android:gravity="top"
@@ -127,6 +131,7 @@
             android:id="@+id/et_personal_agenda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxWidth="488dp"
             android:minHeight="48dp"
             android:hint="@string/hint_personal_agenda"
             android:inputType="text"
@@ -160,6 +165,7 @@
                 android:id="@+id/et_rival"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxWidth="488dp"
                 android:minHeight="48dp"
                 android:hint="@string/hint_rival"
                 android:inputType="textPersonName"
@@ -185,6 +191,7 @@
                 android:id="@+id/et_buddy"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
+                android:maxWidth="488dp"
                 android:minHeight="48dp"
                 android:hint="@string/hint_buddy"
                 android:inputType="textPersonName"
@@ -216,6 +223,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
+                android:maxWidth="488dp"
                 android:layout_weight="1"
                 android:inputType="none"
                 android:focusable="false"
@@ -263,6 +271,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
+                android:maxWidth="488dp"
                 android:layout_weight="1"
                 android:inputType="none"
                 android:focusable="false"
@@ -303,6 +312,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
+                android:maxWidth="488dp"
                 android:layout_weight="1"
                 android:inputType="none"
                 android:focusable="false"
@@ -355,6 +365,7 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
+                android:maxWidth="488dp"
                 android:text="@string/default_value_0"
                 android:gravity="center"
                 android:autofillHints="none" />
@@ -392,6 +403,7 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
+                android:maxWidth="488dp"
                 android:text="@string/default_value_0"
                 android:gravity="center"
                 android:autofillHints="none" />
@@ -429,6 +441,7 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
+                android:maxWidth="488dp"
                 android:text="@string/default_value_0"
                 android:gravity="center"
                 android:autofillHints="none" />
@@ -466,6 +479,7 @@
                 android:inputType="none"
                 android:focusable="false"
                 android:clickable="false"
+                android:maxWidth="488dp"
                 android:text="@string/default_value_0"
                 android:gravity="center"
                 android:autofillHints="none" />
@@ -513,6 +527,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -551,6 +566,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -590,6 +606,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -629,6 +646,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -666,6 +684,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -694,6 +713,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -722,6 +742,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -750,6 +771,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -776,6 +798,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -804,6 +827,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -832,6 +856,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -860,6 +885,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -886,6 +912,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -914,6 +941,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -942,6 +970,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -970,6 +999,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:maxWidth="488dp"
                 android:hint="@string/hint_number_1_6"
                 android:inputType="number"
                 android:autofillHints="none" />
@@ -988,6 +1018,7 @@
             android:id="@+id/et_experience_points"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxWidth="488dp"
             android:hint="@string/default_value_0"
             android:inputType="number"
             android:autofillHints="none" />
@@ -1005,6 +1036,7 @@
             android:id="@+id/et_story_points"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxWidth="488dp"
             android:hint="@string/default_value_0"
             android:inputType="number"
             android:autofillHints="none" />
