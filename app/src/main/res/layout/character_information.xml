@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Character Information -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/character_information"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:hint="@string/hint_name"
+            android:autofillHints="name"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <!-- Career -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_career"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_career"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:hint="@string/hint_career"
+            android:inputType="text"
+            android:autofillHints="jobTitle"/>
+    </LinearLayout>
+
+    <!-- Appearance -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_appearance"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_appearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:hint="@string/hint_appearance"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="5"
+            android:gravity="top"
+            android:autofillHints="none" />
+    </LinearLayout>
+
+    <!-- Talents -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_talents"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/et_talents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="488dp"
+        android:hint="@string/hint_talents"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:minLines="3"
+        android:autofillHints="none" />
+
+    <!-- Personal Agenda -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_personal_agenda"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/et_personal_agenda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxWidth="488dp"
+        android:minHeight="48dp"
+        android:hint="@string/hint_personal_agenda"
+        android:inputType="text"
+        android:autofillHints="none" />
+
+    <!-- Relationships -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_relationships"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <!-- Rival -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_rival"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_rival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:hint="@string/hint_rival"
+            android:inputType="textPersonName"
+            android:autofillHints="none" />
+    </LinearLayout>
+
+    <!-- Buddy -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_buddy"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_buddy"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:hint="@string/hint_buddy"
+            android:inputType="textPersonName"
+            android:autofillHints="none" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+
+    <!-- Empathy -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_empathy"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_empathy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Command -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_command"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_command"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Manipulation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_manipulation"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+        android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_manipulation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Medical Aid -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_medical"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_medical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

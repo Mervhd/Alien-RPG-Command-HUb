@@ -48,7 +48,8 @@ class CharacterSheetFragment : Fragment() {
     private lateinit var storyPointsEditText: EditText
     private lateinit var saveButton: Button
 
-    // Variables used to store the current value of Stress, Health, Rad, etc...
+    // Variables used to store the current value of Stress, Health, Radiation, air, food, power,
+    // and water
     private var stressLevel = 0
     private var health = 0
     private var radiation = 0
@@ -64,6 +65,12 @@ class CharacterSheetFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_character_sheet, container, false)
         initializeViews(view)
         setupButtonListeners(view)
+
+        // Call saveCharacter when the save button is clicked
+        saveButton = view.findViewById(R.id.btn_save_character)
+        saveButton.setOnClickListener {
+            saveCharacter()
+        }
 
         return view
     }
@@ -101,8 +108,6 @@ class CharacterSheetFragment : Fragment() {
         comtechEditText = view.findViewById(R.id.et_comtech)
         experiencePointsEditText = view.findViewById(R.id.et_experience_points)
         storyPointsEditText = view.findViewById(R.id.et_story_points)
-
-        saveButton = view.findViewById(R.id.btn_save_character)
     }
 
     private fun setupButtonListeners(view: View) {
@@ -234,7 +239,9 @@ class CharacterSheetFragment : Fragment() {
             survival = survivalEditText.text.toString().toIntOrNull() ?: 0,
             comtech = comtechEditText.text.toString().toIntOrNull() ?: 0,
             experiencePoints = experiencePointsEditText.text.toString().toIntOrNull() ?: 0,
-            storyPoints = storyPointsEditText.text.toString().toIntOrNull() ?: 0
+            storyPoints = storyPointsEditText.text.toString().toIntOrNull() ?: 0,
+            gear = listOf(), // Initialize gear list if needed
+            weapons = listOf(), // Initialize weapons list if needed
         )
 
         lifecycleScope.launch {
@@ -243,4 +250,3 @@ class CharacterSheetFragment : Fragment() {
         }
     }
 }
-

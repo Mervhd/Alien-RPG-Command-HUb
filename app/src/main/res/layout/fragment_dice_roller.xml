@@ -5,14 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".UI.DiceRollerFragment">
+    tools:context="ui.DiceRollerFragment">
 
     <!-- Base Dice Controls -->
     <TextView
         android:id="@+id/base_dice_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Base Dice"
+        android:text="@string/label_base_dice"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -26,7 +26,8 @@
             android:id="@+id/button_add_base_dice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add" />
+            android:text="@string/label_add_dice"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
 
         <TextView
             android:id="@+id/base_dice_count"
@@ -34,14 +35,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="0"
+            android:text="@string/default_value_0"
             android:textSize="18sp" />
 
         <Button
             android:id="@+id/button_subtract_base_dice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Subtract" />
+            android:text="@string/label_subtract_dice"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
     </LinearLayout>
 
     <!-- Stress Dice Controls -->
@@ -49,7 +51,7 @@
         android:id="@+id/stress_dice_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Stress Dice"
+        android:text="@string/label_stress_dice"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginTop="16dp" />
@@ -64,7 +66,8 @@
             android:id="@+id/button_add_stress_dice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add" />
+            android:text="@string/label_add_dice"
+            tools:ignore="TextContrastCheck" />
 
         <TextView
             android:id="@+id/stress_dice_count"
@@ -72,14 +75,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:text="0"
+            android:text="@string/default_value_0"
             android:textSize="18sp" />
 
         <Button
             android:id="@+id/button_subtract_stress_dice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Subtract" />
+            android:text="@string/label_subtract_dice"
+            tools:ignore="TextContrastCheck" />
     </LinearLayout>
 
     <!-- Roll Dice Button -->
@@ -87,16 +91,18 @@
         android:id="@+id/button_roll_dice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Roll Dice"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="@string/label_roll_dice"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
     <!-- Roll D66 Button -->
     <Button
         android:id="@+id/button_roll_d66"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Roll d66"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="@string/label_roll_d66"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
 
     <!-- Display Rolled Dice -->
     <TextView

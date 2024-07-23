@@ -40,7 +40,7 @@ data class Character(
     val storyPoints: Int,
     val gear: List<String> = emptyList(),
     val weapons: List<Weapon> = emptyList(),
-   // val armorName: String,
+    //val armorName: String,
     //val armorRating: Int
 )
 

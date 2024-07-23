@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+
+    <!-- Wits -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_wits"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_wits"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Observation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_observation"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_observation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Survival -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_survival"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_survival"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Comtech -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_comtech"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_comtech"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

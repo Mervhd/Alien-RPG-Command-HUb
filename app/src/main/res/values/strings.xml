@@ -130,4 +130,17 @@
     <string name="content_description_weapon4_bonus">Weapon 4 Bonus</string>
     <string name="content_description_weapon4_range">Weapon 4 Range</string>
 
+    <!-- Dice Roller Strings -->
+    <string name="label_base_dice">Base Dice</string>
+    <string name="label_add_dice">Add</string>
+    <string name="label_subtract_dice">Subtract</string>
+    <string name="label_stress_dice">Stress Dice</string>
+    <string name="label_roll_dice">Roll Dice</string>
+    <string name="label_roll_d66">Roll d66</string>
+    <string name="d66_roll_result">d66 Roll: %1$d</string>
+    <string name="dice_roll_result">Base Dice: %1$s\nStress Dice: %2$s</string>
+
+    <!-- Inventory Tracker Strings -->
+    <string name="label_save_inventory">Save Inventory</string>
+
 </resources>

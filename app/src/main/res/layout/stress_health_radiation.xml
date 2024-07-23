@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+
+    <!-- Stress, Health, and Radiation -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_shr"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_stress_level" />
+
+        <EditText
+            android:id="@+id/et_stress_level"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:layout_weight="1"
+            android:autofillHints="none"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="none"
+
+            android:text="@string/default_value_0" />
+
+        <Button
+            android:id="@+id/btn_add_stress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/describe_add_stress"
+
+            android:text="@string/button_add" />
+
+        <Button
+            android:id="@+id/btn_subtract_stress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_subtract"
+            android:contentDescription="@string/describe_subtract_stress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_health" />
+
+        <EditText
+            android:id="@+id/et_health"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:maxWidth="488dp"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="false"
+            android:text="@string/default_value_0"
+            android:gravity="center"
+            android:autofillHints="none" />
+
+        <Button
+            android:id="@+id/btn_add_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_add"
+            android:contentDescription="@string/describe_add_health" />
+
+        <Button
+            android:id="@+id/btn_subtract_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_subtract"
+            android:contentDescription="@string/describe_subtract_health" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_radiation" />
+
+        <EditText
+            android:id="@+id/et_radiation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:maxWidth="488dp"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="false"
+            android:text="@string/default_value_0"
+            android:gravity="center"
+            android:autofillHints="none" />
+
+        <Button
+            android:id="@+id/btn_add_radiation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_add"
+            android:contentDescription="@string/describe_add_radiation" />
+
+        <Button
+            android:id="@+id/btn_subtract_radiation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_subtract"
+            android:contentDescription="@string/describe_subtract_radiation" />
+    </LinearLayout>
+</LinearLayout>

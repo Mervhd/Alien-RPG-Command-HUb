@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+
+    <!-- Strength -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_strength"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_strength"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Close Combat -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_close_combat"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_close_combat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+            android:padding="12dp"
+
+            tools:ignore="VisualLintTextFieldSize" />
+    </LinearLayout>
+
+    <!-- Heavy Machinery -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_heavy_machinery"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_heavy_machinery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+    <!-- Stamina -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_stamina"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            android:layout_marginEnd="16dp" />
+
+        <EditText
+            android:id="@+id/et_stamina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="488dp"
+            android:hint="@string/hint_number_1_6"
+            android:inputType="number"
+            android:autofillHints="none"
+            android:minHeight="48dp"
+
+            android:padding="12dp" />
+
+        <!-- May use this later.
+        <Button
+            android:id="@+id/btn_check_stamina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="32dp" />
+        -->
+    </LinearLayout>
+
+</LinearLayout>

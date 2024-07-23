@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp">
+
+    <!-- Consumables -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_consumables"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_air" />
+
+        <EditText
+            android:id="@+id/et_air"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="false"
+            android:maxWidth="488dp"
+            android:text="@string/default_value_0"
+            android:gravity="center"
+            android:autofillHints="none" />
+
+        <Button
+            android:id="@+id/btn_add_air"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_add" />
+
+        <Button
+            android:id="@+id/btn_subtract_air"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_subtract" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_food" />
+
+        <EditText
+            android:id="@+id/et_food"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="false"
+            android:maxWidth="488dp"
+            android:text="@string/default_value_0"
+            android:gravity="center"
+            android:autofillHints="none" />
+
+        <Button
+            android:id="@+id/btn_add_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_add" />
+
+        <Button
+            android:id="@+id/btn_subtract_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_subtract" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_power" />
+
+        <EditText
+            android:id="@+id/et_power"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="false"
+            android:maxWidth="488dp"
+            android:text="@string/default_value_0"
+            android:gravity="center"
+            android:autofillHints="none" />
+
+        <Button
+            android:id="@+id/btn_add_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_add" />
+
+        <Button
+            android:id="@+id/btn_subtract_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_subtract" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_water" />
+
+        <EditText
+            android:id="@+id/et_water"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="false"
+            android:maxWidth="488dp"
+            android:text="@string/default_value_0"
+            android:gravity="center"
+            android:autofillHints="none" />
+
+        <Button
+            android:id="@+id/btn_add_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_add" />
+
+        <Button
+            android:id="@+id/btn_subtract_water"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_subtract" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp">
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btn_save_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_save_character"
+        android:backgroundTint="@color/green_500"
+        android:textColor="@android:color/white"
+        style="?android:attr/buttonBarButtonStyle" />
+
+    <!-- Load Button -->
+    <Button
+        android:id="@+id/btn_load_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_load_character"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/green_500"
+        android:textColor="@android:color/white"
+        style="?android:attr/buttonBarButtonStyle" />
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.alienrpgcommandhub
+package com.example.alienrpgcommandhub.UI
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import androidx.fragment.app.Fragment
 import com.example.alienrpgcommandhub.R
+import androidx.fragment.app.Fragment
 import kotlin.random.Random
 
 class DiceRollerFragment : Fragment() {
@@ -85,7 +85,7 @@ class DiceRollerFragment : Fragment() {
         val baseDiceResults = rollSpecificDice(baseDiceCount) // Roll base dice
         val stressDiceResults = rollSpecificDice(stressDiceCount) // Roll stress dice
         // Create a result text showing both base and stress dice results
-        val resultText = "Base Dice: ${baseDiceResults.joinToString(", ")}\nStress Dice: ${stressDiceResults.joinToString(", ")}"
+        val resultText = getString(R.string.dice_roll_result, baseDiceResults.joinToString(", "), stressDiceResults.joinToString(", "))
         rolledDiceResultView.text = resultText // Update the result view
     }
 
@@ -99,12 +99,11 @@ class DiceRollerFragment : Fragment() {
         val tens = rollD6() // Roll the tens place die
         val units = rollD6() // Roll the units place die
         val result = tens * 10 + units // Calculate the d66 result
-        rolledDiceResultView.text = "d66 Roll: $result" // Update the result view
+        rolledDiceResultView.text = getString(R.string.d66_roll_result, result) // Update the result view
     }
 
     // Function to roll a single d6 die
     private fun rollD6(): Int {
         return Random.nextInt(1, 7) // Return a random number between 1 and 6
     }
-
 }
