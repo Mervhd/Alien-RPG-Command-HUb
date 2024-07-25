@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -30,25 +31,28 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="none"
-            android:focusable="false"
+            android:autofillHints="none"
             android:clickable="false"
-            android:maxWidth="488dp"
-            android:text="@string/default_value_0"
+            android:focusable="false"
             android:gravity="center"
-            android:autofillHints="none" />
+            android:inputType="none"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:text="@string/default_value_0" />
 
         <Button
             android:id="@+id/btn_add_air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_add" />
+            android:text="@string/button_add"
+            tools:ignore="DuplicateSpeakableTextCheck" />
 
         <Button
             android:id="@+id/btn_subtract_air"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_subtract" />
+            android:text="@string/button_subtract"
+            tools:ignore="DuplicateSpeakableTextCheck" />
     </LinearLayout>
 
     <LinearLayout
@@ -68,13 +72,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="none"
-            android:focusable="false"
+            android:autofillHints="none"
             android:clickable="false"
-            android:maxWidth="488dp"
-            android:text="@string/default_value_0"
+            android:focusable="false"
             android:gravity="center"
-            android:autofillHints="none" />
+            android:inputType="none"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:text="@string/default_value_0" />
 
         <Button
             android:id="@+id/btn_add_food"
@@ -106,13 +111,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="none"
-            android:focusable="false"
+            android:autofillHints="none"
             android:clickable="false"
-            android:maxWidth="488dp"
-            android:text="@string/default_value_0"
+            android:focusable="false"
             android:gravity="center"
-            android:autofillHints="none" />
+            android:inputType="none"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:text="@string/default_value_0" />
 
         <Button
             android:id="@+id/btn_add_power"
@@ -144,13 +150,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="none"
-            android:focusable="false"
+            android:autofillHints="none"
             android:clickable="false"
-            android:maxWidth="488dp"
-            android:text="@string/default_value_0"
+            android:focusable="false"
             android:gravity="center"
-            android:autofillHints="none" />
+            android:inputType="none"
+            android:maxWidth="488dp"
+            android:minHeight="48dp"
+            android:text="@string/default_value_0" />
 
         <Button
             android:id="@+id/btn_add_water"

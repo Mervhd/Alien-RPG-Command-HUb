@@ -92,6 +92,10 @@
 
     <!-- Weapons -->
     <string name="label_weapons">Weapons</string>
+    <string name="label_weapon">Weapon</string>
+    <string name="label_bonus">Bonus</string>
+    <string name="label_damage">Damage</string>
+    <string name="label_range">Range</string>
     <string name="label_weapon1">Weapon 1</string>
     <string name="label_weapon2">Weapon 2</string>
     <string name="label_weapon3">Weapon 3</string>
@@ -117,18 +121,18 @@
     <string name="default_value_0">0</string>
 
     <!-- Content Descriptions -->
-    <string name="content_description_weapon1_damage">Weapon 1 Damage</string>
-    <string name="content_description_weapon1_bonus">Weapon 1 Bonus</string>
-    <string name="content_description_weapon1_range">Weapon 1 Range</string>
-    <string name="content_description_weapon2_damage">Weapon 2 Damage</string>
-    <string name="content_description_weapon2_bonus">Weapon 2 Bonus</string>
-    <string name="content_description_weapon2_range">Weapon 2 Range</string>
-    <string name="content_description_weapon3_damage">Weapon 3 Damage</string>
-    <string name="content_description_weapon3_bonus">Weapon 3 Bonus</string>
-    <string name="content_description_weapon3_range">Weapon 3 Range</string>
-    <string name="content_description_weapon4_damage">Weapon 4 Damage</string>
-    <string name="content_description_weapon4_bonus">Weapon 4 Bonus</string>
-    <string name="content_description_weapon4_range">Weapon 4 Range</string>
+    <string name="content_description_weapon1_damage">Damage</string>
+    <string name="content_description_weapon1_bonus">Bonus</string>
+    <string name="content_description_weapon1_range">Range</string>
+    <string name="content_description_weapon2_damage">Damage</string>
+    <string name="content_description_weapon2_bonus">Bonus</string>
+    <string name="content_description_weapon2_range">Range</string>
+    <string name="content_description_weapon3_damage">Damage</string>
+    <string name="content_description_weapon3_bonus">Bonus</string>
+    <string name="content_description_weapon3_range">Range</string>
+    <string name="content_description_weapon4_damage">Damage</string>
+    <string name="content_description_weapon4_bonus">Bonus</string>
+    <string name="content_description_weapon4_range">Range</string>
 
     <!-- Dice Roller Strings -->
     <string name="label_base_dice">Base Dice</string>
@@ -142,5 +146,15 @@
 
     <!-- Inventory Tracker Strings -->
     <string name="label_save_inventory">Save Inventory</string>
+
+    <!-- Notes Section -->
+    <string name="label_notes">Notes</string>
+    <string name="button_add_note">Add Note</string>
+    <string name="button_save_notes">Save Notes</string>
+
+    <!-- Logs Section -->
+    <string name="label_logs">Logs</string>
+    <string name="button_create_log">Create Log</string>
+    <string name="button_save_logs">Save Logs</string>
 
 </resources>

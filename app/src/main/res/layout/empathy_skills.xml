@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -26,12 +27,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:maxWidth="488dp"
+            android:autofillHints="none"
             android:hint="@string/hint_number_1_6"
             android:inputType="number"
-            android:autofillHints="none"
+            android:maxWidth="488dp"
             android:minHeight="48dp"
-            android:padding="12dp" />
+            android:padding="12dp"
+            tools:ignore="DuplicateSpeakableTextCheck,VisualLintTextFieldSize" />
     </LinearLayout>
 
     <!-- Command -->
@@ -62,7 +64,8 @@
             android:inputType="number"
             android:autofillHints="none"
             android:minHeight="48dp"
-            android:padding="12dp" />
+            android:padding="12dp"
+            tools:ignore="VisualLintTextFieldSize" />
     </LinearLayout>
 
     <!-- Manipulation -->
@@ -94,7 +97,8 @@
             android:inputType="number"
             android:autofillHints="none"
             android:minHeight="48dp"
-            android:padding="12dp" />
+            android:padding="12dp"
+            tools:ignore="VisualLintTextFieldSize" />
     </LinearLayout>
 
     <!-- Medical Aid -->
@@ -125,7 +129,8 @@
             android:inputType="number"
             android:autofillHints="none"
             android:minHeight="48dp"
-            android:padding="12dp" />
+            android:padding="12dp"
+            tools:ignore="VisualLintTextFieldSize" />
     </LinearLayout>
 
 </LinearLayout>

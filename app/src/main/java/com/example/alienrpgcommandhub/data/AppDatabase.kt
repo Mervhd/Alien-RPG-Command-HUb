@@ -8,11 +8,13 @@ import androidx.room.TypeConverters
 import androidx.sqlite.db.SupportSQLiteDatabase
 import androidx.room.migration.Migration
 
-@Database(entities = [Character::class], version = 2, exportSchema = false)
+@Database(entities = [Character::class, Note::class, Log::class, InventoryItem::class], version = 2, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun characterDao(): CharacterDao
+    abstract fun inventoryDao(): InventoryDao
+    abstract fun notesAndLogsDao(): NotesAndLogsDao
 
     companion object {
         @Volatile
@@ -35,7 +37,7 @@ abstract class AppDatabase : RoomDatabase() {
         // Define the migration strategy from version 1 to version 2
         private val MIGRATION_1_2 = object : Migration(1, 2) {
             override fun migrate(db: SupportSQLiteDatabase) {
-                // Create a new table with the correct schema
+                // Migration for characters table
                 db.execSQL("""
                     CREATE TABLE IF NOT EXISTS `characters_new` (
                         `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
@@ -76,7 +78,6 @@ abstract class AppDatabase : RoomDatabase() {
                     )
                 """)
 
-                // Copy the data from the old table to the new table
                 db.execSQL("""
                     INSERT INTO characters_new (
                         id, name, career, appearance, talents, personalAgenda, 
@@ -96,11 +97,77 @@ abstract class AppDatabase : RoomDatabase() {
                     FROM characters
                 """)
 
-                // Remove the old table
                 db.execSQL("DROP TABLE characters")
-
-                // Rename the new table to the old table name
                 db.execSQL("ALTER TABLE characters_new RENAME TO characters")
+
+                // Migration for notes table
+                db.execSQL("""
+                    CREATE TABLE IF NOT EXISTS `notes_new` (
+                        `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+                        `characterId` INTEGER NOT NULL, 
+                        `content` TEXT NOT NULL,
+                        FOREIGN KEY(`characterId`) REFERENCES `characters`(`id`) ON DELETE CASCADE
+                    )
+                """)
+
+                db.execSQL("""
+                    INSERT INTO notes_new (
+                        id, characterId, content
+                    )
+                    SELECT 
+                        id, characterId, content
+                    FROM notes
+                """)
+
+                db.execSQL("DROP TABLE notes")
+                db.execSQL("ALTER TABLE notes_new RENAME TO notes")
+
+                // Migration for logs table
+                db.execSQL("""
+                    CREATE TABLE IF NOT EXISTS `logs_new` (
+                        `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+                        `characterId` INTEGER NOT NULL, 
+                        `log` TEXT NOT NULL,
+                        FOREIGN KEY(`characterId`) REFERENCES `characters`(`id`) ON DELETE CASCADE
+                    )
+                """)
+
+                db.execSQL("""
+                    INSERT INTO logs_new (
+                        id, characterId, log
+                    )
+                    SELECT 
+                        id, characterId, log
+                    FROM logs
+                """)
+
+                db.execSQL("DROP TABLE logs")
+                db.execSQL("ALTER TABLE logs_new RENAME TO logs")
+
+                // Migration for inventory table
+                db.execSQL("""
+                    CREATE TABLE IF NOT EXISTS `inventory_new` (
+                        `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 
+                        `characterId` INTEGER NOT NULL, 
+                        `itemName` TEXT NOT NULL,
+                        `quantity` INTEGER NOT NULL,
+                        `armorName` TEXT,  
+                        `armorRating` INTEGER,  
+                        FOREIGN KEY(`characterId`) REFERENCES `characters`(`id`) ON DELETE CASCADE
+                    )
+                """)
+
+                db.execSQL("""
+                    INSERT INTO inventory_new (
+                        id, characterId, itemName, quantity, armorName, armorRating
+                    )
+                    SELECT 
+                        id, characterId, itemName, quantity, armorName, armorRating
+                    FROM inventory
+                """)
+
+                db.execSQL("DROP TABLE inventory")
+                db.execSQL("ALTER TABLE inventory_new RENAME TO inventory")
             }
         }
     }

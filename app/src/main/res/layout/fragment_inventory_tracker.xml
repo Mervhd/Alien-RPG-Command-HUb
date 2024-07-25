@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,13 +19,15 @@
             android:textStyle="bold"
             android:layout_marginTop="16dp" />
 
+        <!-- Gear Fields -->
         <EditText
             android:id="@+id/et_gear1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_gear1"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/et_gear2"
@@ -34,7 +35,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_gear2"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/et_gear3"
@@ -42,7 +44,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_gear3"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/et_gear4"
@@ -50,7 +53,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_gear4"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/et_gear5"
@@ -58,7 +62,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_gear5"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/et_gear6"
@@ -66,7 +71,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_gear6"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/et_gear7"
@@ -74,7 +80,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_gear7"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/et_gear8"
@@ -82,7 +89,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_gear8"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/et_gear9"
@@ -90,7 +98,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_gear9"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/et_gear10"
@@ -98,60 +107,103 @@
             android:layout_height="wrap_content"
             android:hint="@string/hint_gear10"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
-        <!-- Weapons Section -->
-        <TextView
-            android:layout_width="wrap_content"
+        <!-- Header for Weapon Fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/label_weapons"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp">
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_weapon"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_bonus"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_damage"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/label_range"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Weapon Fields -->
         <!-- Weapon 1 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:importantForAutofill="no">
 
             <EditText
                 android:id="@+id/et_weapon1_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/label_weapon1"
-                android:inputType="text" />
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:importantForAutofill="no" />
 
             <EditText
                 android:id="@+id/et_weapon1_bonus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/content_description_weapon1_bonus"
-                android:inputType="number" />
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/et_weapon1_damage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/content_description_weapon1_damage"
-                android:inputType="number" />
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/et_weapon1_range"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/content_description_weapon1_range"
-                android:inputType="text" />
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="48dp" />
         </LinearLayout>
 
         <!-- Weapon 2 -->
@@ -160,43 +212,48 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:importantForAutofill="no">
 
             <EditText
                 android:id="@+id/et_weapon2_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/label_weapon2"
-                android:inputType="text" />
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:importantForAutofill="no" />
 
             <EditText
                 android:id="@+id/et_weapon2_bonus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/content_description_weapon2_bonus"
-                android:inputType="number" />
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/et_weapon2_damage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/content_description_weapon2_damage"
-                android:inputType="number" />
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/et_weapon2_range"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/content_description_weapon2_range"
-                android:inputType="text" />
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="48dp" />
         </LinearLayout>
 
         <!-- Weapon 3 -->
@@ -205,43 +262,48 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:importantForAutofill="no">
 
             <EditText
                 android:id="@+id/et_weapon3_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/label_weapon3"
-                android:inputType="text" />
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:importantForAutofill="no"/>
 
             <EditText
                 android:id="@+id/et_weapon3_bonus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/content_description_weapon3_bonus"
-                android:inputType="number" />
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/et_weapon3_damage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/content_description_weapon3_damage"
-                android:inputType="number" />
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/et_weapon3_range"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/content_description_weapon3_range"
-                android:inputType="text" />
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="48dp" />
         </LinearLayout>
 
         <!-- Weapon 4 -->
@@ -250,43 +312,48 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:importantForAutofill="no">
 
             <EditText
                 android:id="@+id/et_weapon4_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
                 android:hint="@string/label_weapon4"
-                android:inputType="text" />
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:importantForAutofill="no"/>
 
             <EditText
                 android:id="@+id/et_weapon4_bonus"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
-                android:hint="@string/label_weapon_bonus"
-                android:inputType="number" />
+                android:hint="@string/content_description_weapon4_bonus"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/et_weapon4_damage"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
-                android:hint="@string/label_weapon_damage"
-                android:inputType="number" />
+                android:hint="@string/content_description_weapon4_damage"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:minHeight="48dp" />
 
             <EditText
                 android:id="@+id/et_weapon4_range"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:minHeight="48dp"
-                android:hint="@string/label_weapon_range"
-                android:inputType="text" />
+                android:hint="@string/content_description_weapon4_range"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minHeight="48dp" />
         </LinearLayout>
 
         <!-- Armor Section -->
@@ -301,27 +368,31 @@
         <EditText
             android:id="@+id/et_armor_name"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:maxWidth="488dp"
+            android:layout_height="wrap_content"
             android:hint="@string/hint_armor_name"
-            android:inputType="text" />
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <EditText
             android:id="@+id/et_armor_rating"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:maxWidth="488dp"
+            android:layout_height="wrap_content"
             android:hint="@string/hint_armor_rating"
-            android:inputType="number" />
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:importantForAutofill="no" />
 
         <!-- Save Button -->
         <Button
             android:id="@+id/btn_save_inventory"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:text="@string/label_save_inventory"
             android:backgroundTint="@color/green_500"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:maxWidth="320dp"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </ScrollView>
