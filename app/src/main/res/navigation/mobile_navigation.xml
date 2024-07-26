@@ -19,13 +19,13 @@
 
     <fragment
         android:id="@+id/nav_inventory_tracker"
-        android:name="com.example.alienrpgcommandhub.ui.InventoryTracker"
+        android:name="com.example.alienrpgcommandhub.InventoryTracker"
         android:label="Inventory Tracker"
         tools:layout="@layout/fragment_inventory_tracker" />
 
     <fragment
         android:id="@+id/nav_dice_roller"
-        android:name="com.example.alienrpgcommandhub.UI.DiceRollerFragment"
+        android:name="com.example.alienrpgcommandhub.DiceRollerFragment"
         android:label="Dice Roller"
         tools:layout="@layout/fragment_dice_roller" />
 

@@ -15,15 +15,6 @@
         <include
             layout="@layout/character_information" />
 
-        <!-- Include Stress, Health, and Radiation Section -->
-        <include
-            layout="@layout/stress_health_radiation" />
-
-        <!-- Include Consumables -->
-        <include
-            layout="@layout/consumables" />
-
-
         <!-- Attributes and Skills -->
         <TextView
             android:layout_width="wrap_content"
@@ -49,6 +40,14 @@
         <!-- Include Wits and Related Skills -->
         <include
             layout="@layout/wits_skills" />
+
+        <!-- Include Stress, Health, and Radiation Section -->
+        <include
+            layout="@layout/stress_health_radiation" />
+
+        <!-- Include Consumables -->
+        <include
+            layout="@layout/consumables" />
 
         <!-- Include Experience Points -->
         <include

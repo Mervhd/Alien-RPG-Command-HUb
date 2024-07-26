@@ -1,4 +1,4 @@
-package com.example.alienrpgcommandhub.ui
+package com.example.alienrpgcommandhub
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,11 +8,12 @@ import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.example.alienrpgcommandhub.R
+
 import com.example.alienrpgcommandhub.data.AppDatabase
 import com.example.alienrpgcommandhub.data.InventoryItem
 import kotlinx.coroutines.launch
 
+@Suppress("unused")
 class InventoryTracker : Fragment() {
 
     private lateinit var etGear1: EditText

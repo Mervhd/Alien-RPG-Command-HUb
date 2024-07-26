@@ -1,90 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
 
-    <!-- Character Information -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/character_information"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <!-- Name -->
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="8dp">
+        android:layout_height="wrap_content">
 
+        <!-- Character Information -->
         <TextView
+            android:id="@+id/character_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/character_information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_700"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/label_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_name"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginBottom="4dp" />
+            android:textColor="@color/gray_700"
+            app:layout_constraintTop_toBottomOf="@id/character_information"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
 
         <EditText
             android:id="@+id/et_name"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:maxWidth="488dp"
             android:minHeight="48dp"
             android:hint="@string/hint_name"
             android:autofillHints="name"
-            android:inputType="textPersonName" />
-    </LinearLayout>
+            android:inputType="textPersonName"
+            app:layout_constraintTop_toBottomOf="@id/label_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp" />
 
-    <!-- Career -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="8dp">
-
+        <!-- Career -->
         <TextView
+            android:id="@+id/label_career"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_career"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginBottom="4dp" />
+            android:textColor="@color/gray_700"
+            app:layout_constraintTop_toBottomOf="@id/et_name"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
 
         <EditText
             android:id="@+id/et_career"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:maxWidth="488dp"
             android:minHeight="48dp"
             android:hint="@string/hint_career"
             android:inputType="text"
-            android:autofillHints="jobTitle"/>
-    </LinearLayout>
+            android:autofillHints="jobTitle"
+            app:layout_constraintTop_toBottomOf="@id/label_career"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp" />
 
-    <!-- Appearance -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="8dp">
-
+        <!-- Appearance -->
         <TextView
+            android:id="@+id/label_appearance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_appearance"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginBottom="4dp" />
+            android:textColor="@color/gray_700"
+            app:layout_constraintTop_toBottomOf="@id/et_career"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
 
         <EditText
             android:id="@+id/et_appearance"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:maxWidth="488dp"
             android:minHeight="48dp"
             android:hint="@string/hint_appearance"
             android:inputType="textMultiLine"
@@ -92,108 +107,146 @@
             android:maxLines="5"
             android:gravity="top"
             android:autofillHints="none"
-            tools:ignore="VisualLintTextFieldSize" />
-    </LinearLayout>
+            tools:ignore="VisualLintTextFieldSize"
+            app:layout_constraintTop_toBottomOf="@id/label_appearance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp" />
 
-    <!-- Talents -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_talents"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp" />
-
-    <EditText
-        android:id="@+id/et_talents"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxWidth="488dp"
-        android:hint="@string/hint_talents"
-        android:inputType="textMultiLine"
-        android:gravity="top"
-        android:minLines="3"
-        android:autofillHints="none" />
-
-    <!-- Personal Agenda -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_personal_agenda"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp" />
-
-    <EditText
-        android:id="@+id/et_personal_agenda"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:maxWidth="488dp"
-        android:minHeight="48dp"
-        android:hint="@string/hint_personal_agenda"
-        android:inputType="text"
-        android:autofillHints="none" />
-
-    <!-- Relationships -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/label_relationships"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp" />
-
-    <!-- Rival -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="8dp">
-
+        <!-- Talents -->
         <TextView
+            android:id="@+id/label_talents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_talents"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_700"
+            app:layout_constraintTop_toBottomOf="@id/et_appearance"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/et_talents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="@string/hint_talents"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:minLines="3"
+            android:autofillHints="none"
+            app:layout_constraintTop_toBottomOf="@id/label_talents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Personal Agenda -->
+        <TextView
+            android:id="@+id/label_personal_agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_personal_agenda"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_700"
+            app:layout_constraintTop_toBottomOf="@id/et_talents"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/et_personal_agenda"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="@string/hint_personal_agenda"
+            android:inputType="text"
+            android:autofillHints="none"
+            app:layout_constraintTop_toBottomOf="@id/label_personal_agenda"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Relationships -->
+        <TextView
+            android:id="@+id/label_relationships"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_relationships"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray_700"
+            app:layout_constraintTop_toBottomOf="@id/et_personal_agenda"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- Rival -->
+        <TextView
+            android:id="@+id/label_rival"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_rival"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginBottom="4dp" />
+            android:textColor="@color/gray_700"
+            app:layout_constraintTop_toBottomOf="@id/label_relationships"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
 
         <EditText
             android:id="@+id/et_rival"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:maxWidth="488dp"
             android:minHeight="48dp"
             android:hint="@string/hint_rival"
             android:inputType="textPersonName"
             tools:ignore="TextContrastCheck"
-            android:autofillHints="none" />
-    </LinearLayout>
+            android:autofillHints="none"
+            app:layout_constraintTop_toBottomOf="@id/label_rival"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp" />
 
-    <!-- Buddy -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="8dp">
-
+        <!-- Buddy -->
         <TextView
+            android:id="@+id/label_buddy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/label_buddy"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:layout_marginBottom="4dp" />
+            android:textColor="@color/gray_700"
+            app:layout_constraintTop_toBottomOf="@id/et_rival"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp" />
 
         <EditText
             android:id="@+id/et_buddy"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:maxWidth="488dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:minHeight="48dp"
             android:hint="@string/hint_buddy"
             android:inputType="textPersonName"
-            android:autofillHints="none" />
-    </LinearLayout>
+            android:autofillHints="none"
+            app:layout_constraintTop_toBottomOf="@id/label_buddy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="4dp" />
 
-</LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
